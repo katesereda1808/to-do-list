@@ -24,6 +24,7 @@ body{
     min-height: 420px;
     min-width: 276px;
     max-width: 545px;
+    /* padding-right: 5%; */
 }
 .yellow{
     height: 10%;
@@ -43,7 +44,7 @@ h1{
     display: flex;
     align-self: flex-end;
     margin-bottom: 10px;
-    margin-right: 20px;
+    margin-right: 12%;
 }
 .todo-container{
     padding: 10px;
