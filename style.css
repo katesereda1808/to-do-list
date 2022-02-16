@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+}
+.container{
+    box-sizing: border-box;
+    border: 1px solid;
+    border-color: #C4C4C4;
+    background-color: #ffff;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    margin-top: 5%;
+    width: 36vw;
+    height: 80vh;
+    min-height: 420px;
+    min-width: 276px;
+    max-width: 545px;
+}
+.yellow{
+    height: 10%;
+    width: 100%;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border: none;
+    background-color: #FFDC40;
+}
+h1{
+    font-weight: 900;
+    font-size: 1.6rem;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+.arrow{
+    display: flex;
+    align-self: flex-end;
+    margin-bottom: 10px;
+    margin-right: 20px;
+}
+.todo-container{
+    padding: 10px;
+    border: solid 1px #C4C4C4;
+    border-radius: 10px;
+    width: 80%;
+    height: 55%;
+    overflow: scroll;
+}
+.input{
+    border-radius: 10px;
+    width: 265px;
+    height: 30px;
+    border: none;
+    outline:none;
+    font-size:1.5rem;
+}
+input[type="text"]
+{
+    font-size:1.7rem;
+    font-family: 'Lato', sans-serif;
+}
+.todo-list{
+    list-style: none;
+    background-color: white;
+    border: none;
+}
+li{
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    height: 30px;
+    font-size:24px;
+}
+.delete{
+    border: solid 1px #C4C4C4;
+    background-color: #ffff;
+    margin-right: 15px;
+    border-radius: 75px;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button{
+    font-size: 16px;
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    background-color: #9953F1;
+    height: 10%;
+    width: 38%;
+    min-height: 42px;
+    min-width: 150px;
+    border-radius: 71px;
+    border: none;
+    color: white;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    pointer-events: auto;
+    overflow: hidden;
+}
+.plus{
+    background-color: #AA68FE;
+    margin-right: 15px;
+    border-radius: 75px;
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media screen and (max-width:1024px){
+    .container{
+    width: 60vw;
+    }
+}
+@media screen and (max-width:500px){
+    .container{
+    width: 80vw;
+    }
+}
+@media screen and (max-width:1400px){
+    .h1{
+    width: 80vw;
+    }
+}
+@media screen and (max-width:400px){
+    .yellow{
+        height: 7%;
+    }
+    h1 {
+        margin-top: 7%;
+        margin-bottom: 7%;
+    }
+}
